@@ -8,9 +8,10 @@
       Things
     </h1>
     <p>Some stuff about things goes here.</p>
-    <form action="{url 'home' %}" method="get"></form>
+    <form action="{url 'home' %}" method="get">
       {%csrf_token %}
       {{ form.as_p }}
       <input type="Submit" value="Submit">
+    </form>
   </body>
 </html>
